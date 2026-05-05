@@ -182,12 +182,18 @@ a { text-decoration: none; color: inherit; }
 /* ===================== RESPONSIVE DESIGN ===================== */
 
 /* For Tablets (up to 1024px) */
-@media (max-width: 768px) {
-  .container-box {
-    flex-direction: column;
-    text-align: center;
-  }
+@media (max-width: 1024px) {
+    .container-box {
+        gap: 30px;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .visual-right {
+        height: 550px;
+    }
 }
+
 /* For Mobile Devices (up to 768px) */
 @media (max-width: 768px) {
     .hero-section {
@@ -217,18 +223,20 @@ a { text-decoration: none; color: inherit; }
         flex-wrap: wrap; /* Choti screen par buttons niche aa jayenge */
     }
 
-   @media (max-width: 768px) {
-  .visual-right {
-    height: 450px;
-    border: none; /* mobile clean look */
-  }
+    .visual-right {
+        flex: none;
+        width: 100%;
+        height: 450px;
+        border-right: 20px solid #444BD3; /* Mobile par side border wapis add kiya */
+        border-bottom: 20px solid #444BD3;
+    }
 
-  .phone-wrapper {
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-  }
-}
+    .phone-wrapper {
+        left: 50%;
+        transform: translate(-50%, -50%); /* Mobile par center mein align */
+        top: 40%;
+    }
+
     .phone-frame {
         width: 200px; /* Thora chota size mobile ke liye */
     }
@@ -278,19 +286,25 @@ body {
     padding-left: 20px; 
 }
 
-@media (max-width: 480px) {
-  .title {
-    font-size: 38px;
-  }
+.title {
+    font-size: 68px;
+    font-weight: 850;
+    color: #02083D;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
 
-  .description {
-    font-size: 18px;
-  }
+.description {
+    font-size: 22px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 45px;
+    max-width: 520px;
+}
 
-  .btn-group {
-    flex-direction: column;
-    align-items: center;
-  }
+.btn-group { 
+    display: flex; 
+    gap: 20px; 
 }
 
 .btn-yellow {
@@ -434,5 +448,120 @@ body {
     border-top: 1px solid rgba(255,255,255,0.1); 
     font-size: 12px; 
 }
+
+/* ─── 6. PHONE MOCKUP ─────────────────────────────────────── */
+.phone-mockup {
+  background: var(--clr-white);
+  border-radius: var(--r-lg);
+  padding: 14px;
+  width: 220px;
+  box-shadow: var(--shadow-phone);
+  border: 1.5px solid var(--clr-border);
+}
+
+.phone-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--clr-border);
+}
+.phone-title-text { font-weight: 800; font-size: 0.78rem; color: var(--clr-dark); }
+.phone-badge {
+  background: var(--clr-yellow);
+  color: var(--clr-dark);
+  font-size: 0.52rem;
+  font-weight: 900;
+  padding: 2px 7px;
+  border-radius: 20px;
+  letter-spacing: .06em;
+}
+
+.phone-scan-area { text-align: center; padding: 8px 0; }
+.phone-scan-btn {
+  background: var(--clr-yellow);
+  color: var(--clr-dark);
+  font-weight: 900;
+  font-size: 0.9rem;
+  width: 68px; height: 68px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 0 8px rgba(245,166,35,.18);
+  transition: transform .2s;
+}
+.phone-scan-btn:hover { transform: scale(1.06); }
+
+.phone-call-text {
+  font-size: 0.6rem;
+  color: var(--clr-muted);
+  text-align: center;
+  margin: 4px 0 8px;
+}
+
+.phone-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.phone-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 9px;
+  background: var(--clr-body-bg);
+  border-radius: var(--r-sm);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--clr-dark);
+  cursor: pointer;
+  transition: background .2s;
+}
+.phone-feature-item:hover { background: #e4e8f0; }
+
+.phone-feature-icon {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.fi-privacy  { background: #6C63FF; }
+.fi-system   { background: #34C759; }
+.fi-scan     { background: var(--clr-yellow); }
+.fi-intruder { background: #FF3B30; }
+.fi-breach   { background: #007AFF; }
+
+.chevron { margin-left: auto; font-size: 1rem; color: var(--clr-muted); }
+
+/* ─── 7. REVIEWS ───────────────────────────────────────────── */
+.reviews-section {
+  background: var(--clr-yellow-sec);
+  padding: var(--section-py) 0;
+}
+
+.reviews-title {
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 900;
+  color: var(--clr-dark);
+  margin-bottom: 40px;
+}
+
+.reviews-row { -ms-overflow-style: none; scrollbar-width: none; }
+.reviews-row::-webkit-scrollbar { display: none; }
+
+.review-card {
+  background: var(--clr-white);
+  border-radius: var(--r-md);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.review-stars { color: var(--clr-yellow); font-size: 1rem; letter-spacing: 2px; }
+.review-text { font-size: 0.875rem; color: var(--clr-text); line-height: 1.65; flex: 1; }
+.review-author { font-weight: 800; font-size: 0.8rem; color: var(--clr-dark); margin-top: auto; }
 
 
