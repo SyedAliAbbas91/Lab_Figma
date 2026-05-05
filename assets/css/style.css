@@ -278,25 +278,19 @@ body {
     padding-left: 20px; 
 }
 
-.title {
-    font-size: 68px;
-    font-weight: 850;
-    color: #02083D;
-    line-height: 1.05;
-    margin-bottom: 25px;
-}
+@media (max-width: 480px) {
+  .title {
+    font-size: 38px;
+  }
 
-.description {
-    font-size: 22px;
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 45px;
-    max-width: 520px;
-}
+  .description {
+    font-size: 18px;
+  }
 
-.btn-group { 
-    display: flex; 
-    gap: 20px; 
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .btn-yellow {
