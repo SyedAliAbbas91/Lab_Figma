@@ -174,3 +174,279 @@ a { text-decoration: none; color: inherit; }
   padding: 6px 4px !important;
 }
 .certo-nav-link:hover { color: var(--clr-yellow) !important; }
+
+/* ─── 5. HERO ──────────────────────────────────────────────── */
+/* Container adjustments */
+/* Container adjustments */
+/* Core Styling */
+/* ===================== RESPONSIVE DESIGN ===================== */
+
+/* For Tablets (up to 1024px) */
+@media (max-width: 1024px) {
+    .container-box {
+        gap: 30px;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .visual-right {
+        height: 550px;
+    }
+}
+
+/* For Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    .container-box {
+        flex-direction: column; /* Content stack ho jayega */
+        text-align: center;
+        height: auto;
+    }
+
+    .content-left {
+        flex: none;
+        padding-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-group {
+        justify-content: center;
+        flex-wrap: wrap; /* Choti screen par buttons niche aa jayenge */
+    }
+
+    .visual-right {
+        flex: none;
+        width: 100%;
+        height: 450px;
+        border-right: 20px solid #444BD3; /* Mobile par side border wapis add kiya */
+        border-bottom: 20px solid #444BD3;
+    }
+
+    .phone-wrapper {
+        left: 50%;
+        transform: translate(-50%, -50%); /* Mobile par center mein align */
+        top: 40%;
+    }
+
+    .phone-frame {
+        width: 200px; /* Thora chota size mobile ke liye */
+    }
+}
+
+/* For Extra Small Screens (up to 480px) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 38px;
+    }
+    .btn-yellow, .btn-outline {
+        width: 100%; /* Buttons full width ho jayenge */
+        justify-content: center;
+    }
+}
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    background: linear-gradient(135deg, #f3f7ff 0%, #ffffff 100%);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+    overflow-x: hidden;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 40px;
+}
+
+.container-box {
+    display: flex;
+    width: 100%;
+    max-width: 1600px; 
+    align-items: center;
+    gap: 20px;
+}
+
+/* --- Left Side Content --- */
+.content-left { 
+    flex: 0.8; 
+    padding-left: 20px; 
+}
+
+.title {
+    font-size: 68px;
+    font-weight: 850;
+    color: #02083D;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 22px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 45px;
+    max-width: 520px;
+}
+
+.btn-group { 
+    display: flex; 
+    gap: 20px; 
+}
+
+.btn-yellow {
+    background: #FFB31F;
+    color: #02083D;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.btn-yellow, .btn-outline {
+    width: fit-content;      /* Button ki width utni hogi jitna text hai */
+    white-space: nowrap;    /* Text ko ek hi line mein rakhega */
+    padding: 18px 30px;     /* Width mazeed kam karne ke liye side padding thori kam ki hai */
+}
+.btn-yellow:hover {
+    background: #e6a11b;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #02083D;
+    color: #02083D;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #02083D;
+    color: white;
+}
+
+/* --- Right Side Visual --- */
+.visual-right {
+    flex: 1.4; 
+    position: relative;
+    border: 20px solid #444BD3; 
+    border-bottom: none; 
+    border-right: none;
+    height: 700px; 
+}
+
+.image-bg-container {
+    width: 100%;
+    height: 100%;
+    background: #FF9F21;
+    position: relative;
+    overflow: visible;
+}
+
+.person-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: hard-light;
+    opacity: 0.95;
+}
+
+/* --- Floating Phone --- */
+.phone-wrapper {
+    position: absolute;
+    left: 30px; 
+    top: 35%; 
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.phone-frame {
+    background: #ffffff;
+    padding: 7px;
+    border-radius: 40px;
+    width: 230px; 
+    box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+}
+
+.phone-screen {
+    background: #02083D;
+    border-radius: 34px;
+    color: white;
+    padding: 18px;
+}
+
+/* Phone UI */
+.phone-nav { 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 11px; 
+    margin-bottom: 25px; 
+    align-items: center; 
+}
+
+.upgrade-btn { 
+    background: #FFB31F; 
+    color: #02083D; 
+    padding: 2px 10px; 
+    border-radius: 12px; 
+    font-weight: 900; 
+}
+
+.scan-outer { 
+    width: 115px; 
+    height: 115px; 
+    border: 3px solid #444BD3; 
+    border-radius: 50%; 
+    margin: 0 auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.scan-inner { 
+    width: 90px; 
+    height: 90px; 
+    background: #FFB31F; 
+    border-radius: 50%; 
+    color: #02083D; 
+    font-weight: 850; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 18px; 
+    cursor: pointer;
+}
+
+.list-container { 
+    margin-top: 25px; 
+}
+
+.list-item { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 12px 0; 
+    border-top: 1px solid rgba(255,255,255,0.1); 
+    font-size: 12px; 
+}
+
+
