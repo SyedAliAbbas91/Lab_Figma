@@ -159,7 +159,7 @@ a { text-decoration: none; color: inherit; }
 
 .certo-logo {
   font-size: 1.45rem;
-  font-weight: 900;
+  font-weight: 1000;
   color: var(--clr-dark);
   display: flex;
   align-items: center;
