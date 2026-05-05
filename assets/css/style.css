@@ -41,3 +41,54 @@ body {
 }
 img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; }
+
+/* ─── 3. BUTTONS ───────────────────────────────────────────── */
+.btn-hero-primary {
+  background: var(--clr-yellow);
+  color: var(--clr-dark);
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 13px 26px;
+  border-radius: 50px;
+  border: none;
+  transition: background .25s, transform .2s;
+  white-space: nowrap;
+}
+.btn-hero-primary:hover {
+  background: #D4891A;
+  color: var(--clr-dark);
+  transform: translateY(-2px);
+}
+
+.btn-hero-outline {
+  background: transparent;
+  color: var(--clr-dark);
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 12px 26px;
+  border-radius: 50px;
+  border: 2px solid var(--clr-dark);
+  transition: all .25s;
+  white-space: nowrap;
+}
+.btn-hero-outline:hover {
+  background: var(--clr-dark);
+  color: var(--clr-white);
+  transform: translateY(-2px);
+}
+
+.btn-certo-signin {
+  background: var(--clr-signin);
+  color: var(--clr-white);
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: none;
+  transition: opacity .2s, transform .2s;
+}
+.btn-certo-signin:hover {
+  opacity: .85;
+  color: var(--clr-white);
+  transform: translateY(-1px);
+}
