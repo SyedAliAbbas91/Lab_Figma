@@ -948,11 +948,11 @@ body {
 
 /* Footer bottom disclaimer */
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,.08);
+  border-top: 1px solid rgba(255,255,255,.09);
   padding-top: 28px;
 }
 .footer-disclaimer-text {
-  font-size: 0.75rem;
+  font-size: 0.76rem;
   color: rgba(255,255,255,.3);
   line-height: 1.7;
 }
