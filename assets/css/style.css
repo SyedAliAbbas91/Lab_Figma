@@ -112,11 +112,37 @@ a { text-decoration: none; color: inherit; }
   color: var(--clr-dark);
   font-weight: 800;
   font-size: 0.875rem;
-  padding: 10px 24px;
+  padding: 10px 27px;
   border-radius: 50px;
-  border: 2px solid var(--clr-dark);
-  transition: all .25s;
+  border: 3px solid var(--clr-dark);
+  transition: all .29s;
   display: inline-block;
 }
 .btn-info-outline:hover { background: var(--clr-dark); color: var(--clr-white); }
 
+/* Spy banner buttons */
+.btn-spy-primary {
+  background: var(--clr-yellow);
+  color: var(--clr-dark);
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 13px 28px;
+  border-radius: 50px;
+  border: none;
+  white-space: nowrap;
+  transition: all .25s;
+}
+.btn-spy-primary:hover { background: #D4891A; color: var(--clr-dark); transform: translateY(-2px); }
+
+.btn-spy-outline {
+  background: transparent;
+  color: var(--clr-white);
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: 2px solid var(--clr-white);
+  white-space: nowrap;
+  transition: all .25s;
+}
+.btn-spy-outline:hover { background: var(--clr-white); color: var(--clr-dark); transform: translateY(-2px); }
