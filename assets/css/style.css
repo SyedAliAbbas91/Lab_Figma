@@ -146,3 +146,31 @@ a { text-decoration: none; color: inherit; }
   transition: all .25s;
 }
 .btn-spy-outline:hover { background: var(--clr-white); color: var(--clr-dark); transform: translateY(-2px); }
+
+/* ─── 4. NAVBAR ────────────────────────────────────────────── */
+.certo-header {
+  background: var(--clr-white);
+  border-bottom: 1px solid var(--clr-border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.certo-header .navbar { padding: 14px 0; }
+
+.certo-logo {
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: var(--clr-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.certo-nav-link {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--clr-dark) !important;
+  transition: color .2s;
+  padding: 6px 4px !important;
+}
+.certo-nav-link:hover { color: var(--clr-yellow) !important; }
