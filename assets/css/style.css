@@ -641,4 +641,95 @@ body {
   max-height: 440px;
 }
 
+/* ─── 10. FEATURES ─────────────────────────────────────────── */
+.features-section {
+  background: var(--clr-body-bg);
+  padding: var(--section-py) 0;
+}
+
+.features-main-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 900;
+  color: var(--clr-dark);
+  line-height: 1.25;
+  margin-bottom: 40px;
+}
+
+.features-card {
+  background: var(--clr-white);
+  border-radius: var(--r-xl);
+  padding: 56px 48px;
+  box-shadow: var(--shadow-card);
+}
+
+.feature-item { padding: 0 12px; }
+
+.feature-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px; height: 72px;
+  background: var(--clr-body-bg);
+  border-radius: 50%;
+  margin: 0 auto 18px;
+}
+
+.feature-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--clr-dark);
+  margin-bottom: 10px;
+}
+.feature-body {
+  font-size: 0.875rem;
+  color: var(--clr-muted);
+  line-height: 1.7;
+}
+
+/* ─── 11. INFO CARDS ───────────────────────────────────────── */
+.cards-section {
+  background: var(--clr-white);
+  padding: 60px 0;
+}
+
+.info-card {
+  border-radius: var(--r-lg);
+  padding: 40px 36px;
+  height: 100%;
+}
+.info-card--yellow {
+  background: var(--clr-yellow-sec);
+}
+.info-card--white {
+  background: var(--clr-white);
+  border: 1.5px solid var(--clr-border);
+  box-shadow: var(--shadow-card);
+}
+
+.info-card-title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--clr-dark);
+  margin-bottom: 10px;
+}
+.info-card-body {
+  font-size: 0.9rem;
+  color: var(--clr-text);
+  line-height: 1.65;
+}
+.btn-info-purple {
+  background: var(--clr-signin) !important;
+  color: var(--clr-white) !important;
+  font-weight: 800;
+  font-size: 0.875rem;
+  padding: 11px 24px;
+  border-radius: 50px;
+  border: none;
+}
+.btn-info-purple:hover {
+  opacity: .85;
+  transform: translateY(-2px);
+}
+
+
 
