@@ -150,7 +150,7 @@ a { text-decoration: none; color: inherit; }
 /* ─── 4. NAVBAR ────────────────────────────────────────────── */
 .certo-header {
   background: var(--clr-white);
-  border-bottom: 1px solid var(--clr-border);
+  border-bottom: 4px solid var(--clr-border);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -159,7 +159,7 @@ a { text-decoration: none; color: inherit; }
 
 .certo-logo {
   font-size: 1.45rem;
-  font-weight: 1000;
+  font-weight: 2000;
   color: var(--clr-dark);
   display: flex;
   align-items: center;
