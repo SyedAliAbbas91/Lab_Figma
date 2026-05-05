@@ -592,4 +592,53 @@ body {
 .fl-zdnet { letter-spacing: .05em; }
 .fl-wired { border: 2px solid var(--clr-white); padding: 3px 10px; letter-spacing: .12em; }
 
+/* ─── 9. MISSION ───────────────────────────────────────────── */
+.mission-section {
+  background: var(--clr-white);
+  padding: var(--section-py) 0;
+}
+.mission-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 900;
+  color: var(--clr-dark);
+  line-height: 1.2;
+  max-width: 420px;
+}
+.mission-body {
+  font-size: 0.95rem;
+  color: var(--clr-muted);
+  margin-top: 16px;
+  line-height: 1.75;
+  max-width: 400px;
+}
+
+.mission-img-col { display: flex; justify-content: flex-end; }
+
+.mission-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+}
+
+.mission-yellow-frame {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 88%;
+  height: calc(100% - 20px);
+  background: var(--clr-yellow-sec);
+  border-radius: var(--r-md);
+  z-index: 0;
+}
+
+.mission-person-img {
+  position: relative;
+  z-index: 1;
+  width: 88%;
+  border-radius: var(--r-md);
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  max-height: 440px;
+}
+
 
