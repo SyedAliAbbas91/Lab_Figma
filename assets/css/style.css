@@ -564,4 +564,32 @@ body {
 .review-text { font-size: 0.875rem; color: var(--clr-text); line-height: 1.65; flex: 1; }
 .review-author { font-weight: 800; font-size: 0.8rem; color: var(--clr-dark); margin-top: auto; }
 
+/* ─── 8. FEATURED IN ───────────────────────────────────────── */
+.featured-section {
+  background: var(--clr-dark-navy);
+  padding: 36px 0;
+}
+.featured-label {
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,.45);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+.featured-logo-item { opacity: .7; transition: opacity .2s; }
+.featured-logo-item:hover { opacity: 1; }
+.featured-text-logo {
+  font-weight: 900;
+  color: var(--clr-white);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.fl-cnbc  { font-size: 1rem; letter-spacing: .04em; }
+.fl-nyt   { font-family: Georgia, serif; font-size: 0.75rem; }
+.fl-ft    { font-size: 0.78rem; }
+.fl-rd    { font-family: Georgia, serif; font-size: 0.82rem; }
+.fl-zdnet { letter-spacing: .05em; }
+.fl-wired { border: 2px solid var(--clr-white); padding: 3px 10px; letter-spacing: .12em; }
+
 
