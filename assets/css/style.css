@@ -88,9 +88,9 @@ a { text-decoration: none; color: inherit; }
   transition: opacity .2s, transform .2s;
 }
 .btn-certo-signin:hover {
-  opacity: .85;
+  opacity: .88;
   color: var(--clr-white);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 /* Info card buttons */
@@ -98,11 +98,11 @@ a { text-decoration: none; color: inherit; }
   background: var(--clr-dark);
   color: var(--clr-white);
   font-weight: 700;
-  font-size: 0.876rem;
+  font-size: 0.912rem;
   padding: 12px 29px;
   border-radius: 53px;
   border: none;
-  transition: all .25s;
+  transition: all .27s;
   display: inline-block;
 }
 .btn-info-dark:hover { background: #2d2d4a; color: var(--clr-white); transform: translateY(-2px); }
