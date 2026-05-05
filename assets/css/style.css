@@ -92,3 +92,31 @@ a { text-decoration: none; color: inherit; }
   color: var(--clr-white);
   transform: translateY(-1px);
 }
+
+/* Info card buttons */
+.btn-info-dark {
+  background: var(--clr-dark);
+  color: var(--clr-white);
+  font-weight: 800;
+  font-size: 0.875rem;
+  padding: 11px 24px;
+  border-radius: 50px;
+  border: none;
+  transition: all .25s;
+  display: inline-block;
+}
+.btn-info-dark:hover { background: #2d2d4a; color: var(--clr-white); transform: translateY(-2px); }
+
+.btn-info-outline {
+  background: transparent;
+  color: var(--clr-dark);
+  font-weight: 800;
+  font-size: 0.875rem;
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: 2px solid var(--clr-dark);
+  transition: all .25s;
+  display: inline-block;
+}
+.btn-info-outline:hover { background: var(--clr-dark); color: var(--clr-white); }
+
