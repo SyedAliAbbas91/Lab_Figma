@@ -80,10 +80,10 @@ a { text-decoration: none; color: inherit; }
 .btn-certo-signin {
   background: var(--clr-signin);
   color: var(--clr-white);
-  font-weight: 700;
-  font-size: 0.875rem;
-  padding: 10px 22px;
-  border-radius: 50px;
+  font-weight: 750;
+  font-size: 0.879rem;
+  padding: 12px 25px;
+  border-radius: 52px;
   border: none;
   transition: opacity .2s, transform .2s;
 }
@@ -97,10 +97,10 @@ a { text-decoration: none; color: inherit; }
 .btn-info-dark {
   background: var(--clr-dark);
   color: var(--clr-white);
-  font-weight: 800;
-  font-size: 0.875rem;
-  padding: 11px 24px;
-  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.876rem;
+  padding: 12px 29px;
+  border-radius: 53px;
   border: none;
   transition: all .25s;
   display: inline-block;
