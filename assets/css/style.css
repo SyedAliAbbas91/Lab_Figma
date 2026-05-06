@@ -156,7 +156,17 @@ a { text-decoration: none; color: inherit; }
   z-index: 1000;
 }
 .certo-header .navbar { padding: 14px 0; }
-
+.certo-big {
+  font-family: 'Nunito', sans-serif; 
+  font-size: 4rem;        
+  font-weight: 100;      
+  color: #02083D;        
+  letter-spacing: -1.5px;  
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .certo-logo {
   font-size: 1.45rem;
   font-weight: 2000;
