@@ -320,9 +320,9 @@ body {
     transition: 0.3s;
 }
 .btn-yellow, .btn-outline {
-    width: fit-content;      /* Button ki width utni hogi jitna text hai */
-    white-space: nowrap;    /* Text ko ek hi line mein rakhega */
-    padding: 18px 30px;     /* Width mazeed kam karne ke liye side padding thori kam ki hai */
+    width: fit-content;     
+    white-space: nowrap; 
+    padding: 18px 30px;   
 }
 .btn-yellow:hover {
     background: #e6a11b;
@@ -407,7 +407,7 @@ body {
 .upgrade-btn { 
     background: #FFB31F; 
     color: #02083D; 
-    padding: 2px 10px; 
+    padding: 6px 13px; 
     border-radius: 12px; 
     font-weight: 900; 
 }
