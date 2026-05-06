@@ -156,16 +156,23 @@ a { text-decoration: none; color: inherit; }
   z-index: 1000;
 }
 .certo-header .navbar { padding: 14px 0; }
-.certo-big {
-  font-family: 'Times New Roman', Times, serif; 
-  font-size: 2rem;          
-  font-weight: 400;        
-  color: #02083D;          
-  letter-spacing: normal;  
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.certo-logo {
+  display: flex;         /* Dono ko ek line mein lane ke liye */
+  align-items: center;   /* Vertical center align karne ke liye (Sabse zaroori) */
+  gap: 12px;             /* Icon aur text ke beech ka barabar fasla */
+  font-size: 5.45rem;    /* Aapka manga hua size */
+  font-weight: 900;
+  font: 
+  color: var(--clr-dark);
+  text-decoration: none;
+}
+
+/* Icon (Yellow Part) ko text ke barabar bada karne ke liye */
+.certo-logo img, 
+.certo-logo .logo-icon {
+  height: 3em;           /* '1em' ka matlab hai jitna bara text hai utna hi bara icon */
+  width: auto;           /* Proportion maintain rakhne ke liye */
+  display: block;
 }
 @media (max-width: 768px) {
   .certo-big {
@@ -184,6 +191,7 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   align-items: center;
   line-height: 0.8;
+  
 }
 
 .certo-nav-link {
