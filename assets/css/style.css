@@ -155,45 +155,39 @@ a { text-decoration: none; color: inherit; }
   top: 0;
   z-index: 1000;
 }
-.certo-header .navbar { padding: 14px 0; }
+
+.certo-header .navbar { 
+  padding: 20px 0; 
+}
+
 .certo-logo {
-  display: flex;         /* Dono ko ek line mein lane ke liye */
-  align-items: center;   /* Vertical center align karne ke liye (Sabse zaroori) */
-  gap: 12px;             /* Icon aur text ke beech ka barabar fasla */
-  font-size: 5.45rem;    /* Aapka manga hua size */
-  font-weight: 900;
-  font: 
+  font-family: "Times New Roman", Times, serif;
+  display: flex;      
+  align-items: center;  
+  gap: 15px;            
+  font-size: 3.5rem;    
+  font-weight: bold;
   color: var(--clr-dark);
   text-decoration: none;
+  line-height: 1;
 }
 
-/* Icon (Yellow Part) ko text ke barabar bada karne ke liye */
 .certo-logo img, 
 .certo-logo .logo-icon {
-  height: 3em;           /* '1em' ka matlab hai jitna bara text hai utna hi bara icon */
-  width: auto;           /* Proportion maintain rakhne ke liye */
+  height: 5.5rem;   
+  width: auto;           
   display: block;
 }
+
 @media (max-width: 768px) {
-  .certo-big {
-    font-size: 2.8rem;
+  .certo-logo {
+    font-size: 2.2rem;
     justify-content: center;
   }
+  .certo-logo img {
+    height: 3.5rem;
+  }
 }
-.certo-logo {
-  font-size: 6.5rem;
-  font-weight: 900;
-  color: var(--clr-dark);
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: var(--clr-dark);
-  display: flex;
-  align-items: center;
-  line-height: 0.8;
-  
-}
-
 .certo-nav-link {
   font-weight: 700;
   font-size: 0.9rem;
