@@ -164,7 +164,7 @@ a { text-decoration: none; color: inherit; }
   font-family: "Times New Roman", Times, serif;
   display: flex;      
   align-items: center;  
-  gap: 15px;            
+  gap: 9px;            
   font-size: 3.5rem;    
   font-weight: bold;
   color: var(--clr-dark);
@@ -174,7 +174,7 @@ a { text-decoration: none; color: inherit; }
 
 .certo-logo img, 
 .certo-logo .logo-icon {
-  height: 6.5rem;   
+  height: 2.7rem;   
   width: auto;           
   display: block;
 }
